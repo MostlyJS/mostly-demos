@@ -1,7 +1,7 @@
 {
   "name": "mostly-rest",
   "version": "1.0.0",
-  "description": "MostlyJS microservice feathers demo",
+  "description": "MostlyJS microservice poplarjs demo",
   "author": "Forafish",
   "license": "MIT",
   "main": "index.js",
@@ -27,6 +27,7 @@
     "lodash": "^4.17.4",
     "nats": "^0.7.16",
     "nats-hemera": "^1.0.1",
+    "seamless-immutable": "^7.1.2",
     "tinysonic": "^1.2.0",
     "uberproto": "^1.2.0"
   },
