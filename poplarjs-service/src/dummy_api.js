@@ -65,9 +65,6 @@ DummyApi.define('info', {
   http: { path: 'info', verb: 'get' },
   presenter: DummyEntity,
   returns: function(ctx, cb) {
-    ctx.res.send({
-      data: ctx.result
-    });
     cb();
   }
 }, function(params, cb) {
