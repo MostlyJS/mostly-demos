@@ -1,11 +1,14 @@
 import util from 'util';
 import poplar from '../../../mostly-poplarjs';
+import makeDebug from 'debug';
+
+const debug = makeDebug('poplarjs-service:dummy_api');
 
 const Entity = poplar.Entity;
 const ApiBuilder = poplar.ApiBuilder;
 
 // User Entity
-var DummyEntity = new Entity({
+var DummyEntity = new Entity('Dummy', {
   username: true,
   age: true,
   description: { as: 'introduction' },
@@ -65,9 +68,11 @@ DummyApi.define('info', {
   http: { path: 'info', verb: 'get' },
   presenter: DummyEntity,
   returns: function(ctx, cb) {
-    cb();
+    var data = ctx.result || {};
+    cb(null, { data });
   }
 }, function(params, cb) {
+  debug('dummy.info', params);
 
   cb(null, {
     username: 'Dummy',
@@ -90,8 +95,8 @@ DummyApi.define('show', {
     }
   ],
   description: 'Get user info',
-  http: { path: ':id', verb: 'get' }
-}, function(params) {
+  http: { path: 'show/:id', verb: 'get' }
+}, function(params, cb) {
   cb(null, { id: params.id });
 });
 
