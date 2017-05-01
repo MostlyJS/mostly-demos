@@ -1005,19 +1005,19 @@ debug@2.6.0:
   dependencies:
     ms "0.7.2"
 
-debug@2.6.1, debug@^2.2.0:
+debug@2.6.1, debug@^2.1.1, debug@^2.2.0:
   version "2.6.1"
   resolved "http://registry.npm.taobao.org/debug/download/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
   dependencies:
     ms "0.7.2"
 
-debug@2.6.4:
+debug@2.6.4, debug@2.X:
   version "2.6.4"
   resolved "http://registry.npm.taobao.org/debug/download/debug-2.6.4.tgz#7586a9b3c39741c0282ae33445c4e8ac74734fe0"
   dependencies:
     ms "0.7.3"
 
-debug@2.X, debug@^2.1.1, debug@^2.6.6:
+debug@^2.6.6:
   version "2.6.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.6.tgz#a9fa6fbe9ca43cf1e79f73b75c0189cbb7d6db5a"
   dependencies:
@@ -2351,10 +2351,6 @@ json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "http://registry.npm.taobao.org/json-stringify-safe/download/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
 
-json3@3.2.4:
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/json3/-/json3-3.2.4.tgz#689c589e7ca9340c7ee4949e0d105bc5bf159f21"
-
 json3@3.3.2:
   version "3.3.2"
   resolved "http://registry.npm.taobao.org/json3/download/json3-3.3.2.tgz#3c0434743df93e2f5c42aee7b19bcb483575f4e1"
@@ -2697,18 +2693,20 @@ mocha@^3.3.0:
     mkdirp "0.5.1"
     supports-color "3.1.2"
 
-mostly-feathers-rest@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/mostly-feathers-rest/-/mostly-feathers-rest-1.0.0.tgz#5ba2f27db3597b0ca4f865171a0ad3f9c0cbe75a"
+mostly-feathers-rest@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/mostly-feathers-rest/-/mostly-feathers-rest-1.0.1.tgz#1bb3cd9eb64c1befdecefd2e3a6de92de2c014fc"
   dependencies:
+    babel-polyfill "^6.23.0"
     debug "^2.6.6"
     gulp-watch "^4.3.11"
     lodash "^4.17.4"
 
-mostly-node@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/mostly-node/-/mostly-node-1.0.3.tgz#8fedd95cddaf9f9536ee6ea7d471f07c0e110eae"
+mostly-node@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/mostly-node/-/mostly-node-1.0.4.tgz#307cd99d0ebff4b3e7395eed278407591d093567"
   dependencies:
+    babel-polyfill "^6.23.0"
     bloomrun "^3.0.4"
     debug "^2.6.6"
     errio "^1.2.2"
@@ -2720,10 +2718,11 @@ mostly-node@^1.0.3:
     super-error "^2.0.0"
     tinysonic "^1.2.0"
 
-mostly-poplarjs-rest@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/mostly-poplarjs-rest/-/mostly-poplarjs-rest-1.0.1.tgz#76d31d21fd86468002d15d1826d52ec29c87f48c"
+mostly-poplarjs-rest@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/mostly-poplarjs-rest/-/mostly-poplarjs-rest-1.0.2.tgz#4e6c29fbdbf57806647b61bf0a0aa5e34502c652"
   dependencies:
+    babel-polyfill "^6.23.0"
     debug "^2.6.6"
 
 ms@0.7.1:
@@ -3038,12 +3037,6 @@ pino@^4.3.0:
 pluralize@^1.2.1:
   version "1.2.1"
   resolved "http://registry.npm.taobao.org/pluralize/download/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
-
-polyfill@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/polyfill/-/polyfill-0.1.0.tgz#ded507cb76802804834b3385dfd3ba2e51004c3d"
-  dependencies:
-    json3 "3.2.4"
 
 prelude-ls@~1.1.2:
   version "1.1.2"

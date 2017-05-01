@@ -2261,10 +2261,6 @@ json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "http://registry.npm.taobao.org/json-stringify-safe/download/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
 
-json3@3.2.4:
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/json3/-/json3-3.2.4.tgz#689c589e7ca9340c7ee4949e0d105bc5bf159f21"
-
 json3@3.3.2:
   version "3.3.2"
   resolved "http://registry.npm.taobao.org/json3/download/json3-3.3.2.tgz#3c0434743df93e2f5c42aee7b19bcb483575f4e1"
@@ -2724,18 +2720,20 @@ mocha@^3.3.0:
     mkdirp "0.5.1"
     supports-color "3.1.2"
 
-mostly-entity@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/mostly-entity/-/mostly-entity-1.0.3.tgz#56d80af957167815bb83af04fab20789ba6b9d68"
+mostly-entity@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/mostly-entity/-/mostly-entity-1.0.4.tgz#fc4edefd7b786e2e33879c6f00fb84bfbe033c37"
   dependencies:
+    babel-polyfill "^6.23.0"
     debug "^2.6.6"
     lodash "^4.17.4"
     seamless-immutable "^7.1.2"
 
-mostly-node@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/mostly-node/-/mostly-node-1.0.3.tgz#8fedd95cddaf9f9536ee6ea7d471f07c0e110eae"
+mostly-node@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/mostly-node/-/mostly-node-1.0.4.tgz#307cd99d0ebff4b3e7395eed278407591d093567"
   dependencies:
+    babel-polyfill "^6.23.0"
     bloomrun "^3.0.4"
     debug "^2.6.6"
     errio "^1.2.2"
@@ -2747,14 +2745,15 @@ mostly-node@^1.0.3:
     super-error "^2.0.0"
     tinysonic "^1.2.0"
 
-mostly-poplarjs@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/mostly-poplarjs/-/mostly-poplarjs-1.0.2.tgz#4189ebadc611b6aa23542daca66270604d983e25"
+mostly-poplarjs@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/mostly-poplarjs/-/mostly-poplarjs-1.0.3.tgz#93e0af8c096470e3c69395f1b33c43c4a03276c7"
   dependencies:
+    babel-polyfill "^6.23.0"
     debug "^2.6.6"
     lodash "^4.17.4"
     minimatch "^3.0.3"
-    mostly-entity "^1.0.3"
+    mostly-entity "^1.0.4"
     nats "^0.7.16"
     on-finished "^2.3.0"
     path-to-regexp "^1.7.0"
@@ -3093,12 +3092,6 @@ pino@^4.3.0:
 pluralize@^1.2.1:
   version "1.2.1"
   resolved "http://registry.npm.taobao.org/pluralize/download/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
-
-polyfill@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/polyfill/-/polyfill-0.1.0.tgz#ded507cb76802804834b3385dfd3ba2e51004c3d"
-  dependencies:
-    json3 "3.2.4"
 
 prelude-ls@~1.1.2:
   version "1.1.2"
