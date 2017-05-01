@@ -30,5 +30,5 @@ app.use(compress())
 trans.ready(() => {
   app.use(poplar(app, trans, '/poplar'));
   app.use(feathers(app, trans, '/feathers'));
-  app.listen(3001);
+  app.listen(process.env.PORT || 3001);
 });
