@@ -26,6 +26,9 @@
     "express": "^4.15.2",
     "favicon": "^0.0.2",
     "feathers-errors": "^2.6.3",
+    "mostly-feathers-rest": "^1.0.0",
+    "mostly-node": "^1.0.3",
+    "mostly-poplarjs-rest": "^1.0.1",
     "nats": "^0.7.16",
     "qs": "^6.4.0"
   },
@@ -40,7 +43,6 @@
     "gulp-babel": "^6.1.2",
     "gulp-changed": "^3.0.0",
     "gulp-eslint": "^3.0.1",
-    "gulp-livereload": "^3.8.1",
     "gulp-nodemon": "^2.2.1",
     "gulp-sourcemaps": "^2.6.0",
     "istanbul": "^0.4.5",

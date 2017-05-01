@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>public</title>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+      var socket = io('http://api-plant-dev.boqii.com');
+
+      socket.emit('authenticate', { token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjU3YzYzY2NiZjNjMmRkM2Y2NzhmMDIzMiIsImlhdCI6MTQ4MzQ0MTEyOCwiZXhwIjoxNDgzNTI3NTI4LCJpc3MiOiJmZWF0aGVycyJ9.h6ecBoimMwZixobCnvbEtO8r-4rJbqWzjDX093N0mXI' });
+      
+      socket.on('authenticated', function () {
+        console.log('authenticated');
+      });
+
+      socket.on('unauthorized', function(msg) {
+        console.log("unauthorized: " + JSON.stringify(msg.data));
+      });
+
+      socket.on('shop/orders created', function(order) {
+        console.log('Order assigned', order);
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

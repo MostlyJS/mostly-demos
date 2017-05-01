@@ -1,8 +1,8 @@
 import nats from 'nats';
-import mostly from '../../../mostly-core';
-import feathers from '../../../mostly-feathers';
-import service from './service';
+import mostly from 'mostly-node';
+import feathers from 'mostly-feathers';
 import hooks from 'feathers-hooks';
+import service from './service';
 
 const trans = new mostly(nats.connect(), {
   logLevel: 'info'

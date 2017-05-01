@@ -1,10 +1,10 @@
 import util from 'util';
-import poplar from '../../../mostly-poplarjs';
+import poplar from 'mostly-poplarjs';
 import makeDebug from 'debug';
+import Entity from 'mostly-entity';
 
 const debug = makeDebug('poplarjs-service:dummy_api');
 
-const Entity = poplar.Entity;
 const ApiBuilder = poplar.ApiBuilder;
 
 // User Entity

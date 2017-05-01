@@ -7,8 +7,7 @@
   "main": "index.js",
   "scripts": {
     "prepublish": "npm run compile",
-    "publish": "git push origin --tags && npm run changelog && git push origin",
-    "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
+    "publish": "git push origin --tags && git push origin",
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
@@ -21,6 +20,9 @@
   },
   "dependencies": {
     "debug": "^2.6.6",
+    "mostly-entity": "^1.0.3",
+    "mostly-node": "^1.0.3",
+    "mostly-poplarjs": "^1.0.2",
     "nats": "^0.7.16"
   },
   "devDependencies": {
@@ -35,7 +37,6 @@
     "gulp-changed": "^3.0.0",
     "gulp-eslint": "^3.0.1",
     "gulp-file-cache": "^0.0.1",
-    "gulp-livereload": "^3.8.1",
     "gulp-nodemon": "^2.2.1",
     "gulp-sourcemaps": "^2.6.0",
     "istanbul": "^0.4.5",
