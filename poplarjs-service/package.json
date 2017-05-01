@@ -21,9 +21,9 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "debug": "^2.6.6",
-    "mostly-entity": "^1.0.3",
-    "mostly-node": "^1.0.3",
-    "mostly-poplarjs": "^1.0.2",
+    "mostly-entity": "^1.0.4",
+    "mostly-node": "^1.0.4",
+    "mostly-poplarjs": "^1.0.3",
     "nats": "^0.7.16"
   },
   "devDependencies": {

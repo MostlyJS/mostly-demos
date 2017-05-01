@@ -22,8 +22,8 @@
     "babel-polyfill": "^6.23.0",
     "feathers-hooks": "^2.0.0",
     "feathers-memory": "^1.1.0",
-    "mostly-feathers": "^1.0.1",
-    "mostly-node": "^1.0.3",
+    "mostly-feathers": "^1.0.2",
+    "mostly-node": "^1.0.4",
     "nats": "^0.7.16"
   },
   "devDependencies": {
