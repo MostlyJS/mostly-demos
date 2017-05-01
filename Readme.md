@@ -7,15 +7,15 @@ MostlyJS microservices examples:
 
 ### express-gateway
 
-Express gateway demo server for call MostlyJS microservice.
+An Express demo server serves as a RESTful gateway for calling MostlyJS microservices. Request will be mapping to corresponding microservice.
 
 ### feathers-service
 
-Microservice writing in Feathers, exposing as RESTful api by express-gateway
+Sample microservice writing using Feathers.
 
 ### poplarjs-service
 
-Microservice writing in Poplarjs, exposing as RESTful api by express-gateway
+Sample microservice writing using Poplarjs.
 
 # License
 
