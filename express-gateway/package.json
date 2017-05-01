@@ -1,0 +1,50 @@
+{
+  "name": "mostly-express-gateway",
+  "version": "1.0.0",
+  "description": "MostlyJS microservice RESTful gateway using express",
+  "author": "Forafish",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run compile",
+    "publish": "git push origin --tags && npm run changelog && git push origin",
+    "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "compile": "rimraf -rf lib/ && babel -d lib/ src/",
+    "watch": "babel --watch -d lib/ src/",
+    "lint": "eslint-if-supported semistandard --fix",
+    "mocha": "mocha --opts mocha.opts",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts",
+    "test": "npm run compile && npm run lint && npm run coverage"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "favicon": "^0.0.2",
+    "feathers-errors": "^2.6.3",
+    "nats": "^0.7.16",
+    "qs": "^6.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-root-import": "^5.1.0",
+    "babel-preset-env": "^1.4.0",
+    "eslint-if-supported": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-changed": "^3.0.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.3.0",
+    "rimraf": "^2.6.1"
+  }
+}
