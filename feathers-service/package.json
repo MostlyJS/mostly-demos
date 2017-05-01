@@ -19,6 +19,7 @@
     "test": "npm run compile && npm run lint && npm run coverage"
   },
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "feathers-hooks": "^2.0.0",
     "feathers-memory": "^1.1.0",
     "mostly-feathers": "^1.0.1",
