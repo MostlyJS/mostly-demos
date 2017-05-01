@@ -100,4 +100,28 @@ DummyApi.define('show', {
   cb(null, { id: params.id });
 });
 
+DummyApi.define('call', {
+  accepts: [
+    {
+      arg: 'headers',
+      type: 'object',
+      description: 'headers信息',
+      http: function(ctx) {
+        return ctx.req.headers;
+      }
+    }
+  ],
+  description: 'Call remote service',
+  http: { path: 'call', verb: 'get' }
+}, function(params, cb) {
+  DummyApi.act('show', {
+    path: 'dummies/show/1',
+    verb: 'get',
+    headers: params.headers,
+    query: { a: 1 },
+  }, function(err, data) {
+    cb(err, data);
+  });
+});
+
 module.exports = DummyApi;
