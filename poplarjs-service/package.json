@@ -32,6 +32,7 @@
     "eslint-if-supported": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-changed": "^3.0.0",
     "gulp-eslint": "^3.0.1",
     "gulp-file-cache": "^0.0.1",
     "gulp-livereload": "^3.8.1",

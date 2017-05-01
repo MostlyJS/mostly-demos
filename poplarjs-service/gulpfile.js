@@ -3,28 +3,24 @@ const babel = require('gulp-babel');
 const sourcemaps = require('gulp-sourcemaps');
 const nodemon = require('gulp-nodemon');
 const eslint = require('gulp-eslint');
-const makeCache = require('gulp-file-cache');
-
-const cache = new makeCache();
+const changed = require('gulp-changed');
 
 gulp.task('lint', function() {
   return gulp.src('src/**/*.js')
-    .pipe(cache.filter())
+    .pipe(changed('lib'))
     .pipe(eslint())
-    .pipe(cache.cache())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError())
 });
 
 gulp.task('compile', () => {
   return gulp.src('src/**/*.js')
-    .pipe(cache.filter())
+    .pipe(changed('lib'))
     .pipe(sourcemaps.init())
     .pipe(babel({
       presets: ['env']
     }))
     .pipe(sourcemaps.write('.'))
-    .pipe(cache.cache())
     .pipe(gulp.dest('lib'));
 });
 
