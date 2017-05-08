@@ -5,7 +5,7 @@ MostlyJS Demos
 
 ## Code structure
 
-The MostlyJS microservices demo project splits codebases into multiple seperate independently packages in one repository using a [Monorepos](https://github.com/babel/babel/blob/master/doc/design/monorepo.md) approach.
+The MostlyJS microservices demo project splits codebases into multiple separate independently packages in one repository using a [Monorepos](https://github.com/babel/babel/blob/master/doc/design/monorepo.md) approach.
 
 The project follows a simple [Alle Monorepo](https://github.com/boennemann/alle) architecture. You have a file system looks like this:
 
