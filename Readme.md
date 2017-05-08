@@ -63,10 +63,12 @@ $ gulp compile
 $ gulp
 ```
 
+Only packages with process_development.json will be started as a server.
+
 ### Run with PM2
 
 ```bash
-$ pm2 start process_development.json
+$ bin/run_development.sh
 ```
 
 # License
