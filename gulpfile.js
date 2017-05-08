@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const gulp = require('gulp');
 const babel = require('gulp-babel');
@@ -42,25 +43,28 @@ repo.task('compile', (pkg) => {
 
 repo.task('server', function (pkg) {
   gutil.log('Server', pkg.name(), 'package');
-  pm2.connect(true, function () {
-    pm2.restart({
-      name: pkg.name(),
-      script: path.join(pkg.location(), 'index.js'),
-      env: {
-        'NODE_ENV': 'development',
-        'DEBUG': 'mostly:* mongoose:*',
-        'APP': 'all'
+  var configFile = path.join(pkg.location(), 'process_development.json');
+  fs.readFile(configFile, function(err, data) {
+    if (err) {
+      if (err.code === 'ENOENT') {
+        gutil.log(' => Skip not a server', pkg.name());
+        return;
       }
-    }, function () {
-      gutil.log('Server started', pkg.name(), 'package');
-      pm2.streamLogs('all', 0);
+      throw err;
+    }
+    var config = JSON.parse(data);
+    pm2.connect(true, function () {
+      pm2.restart(config, function () {
+        gutil.log('Server started', pkg.name(), 'package');
+        pm2.streamLogs('all', 0);
+      });
     });
   });
 });
 
 repo.task('watch', function(pkg) {
   gutil.log('Watch', pkg.name(), 'package');
-  gulp.watch(path.join(pkg.location(), 'src'), ['compile', 'server'])
+  gulp.watch(path.join(pkg.location(), 'src/**/*.js'), ['compile', 'server'])
 });
 
 repo.task('default', ['compile', 'server', 'watch']);
