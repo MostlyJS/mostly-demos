@@ -10,13 +10,13 @@ The MostlyJS microservices demo project splits codebases into to multiple sepera
 The project using a simple [Alle Monorepo](https://github.com/boennemann/alle) architecture. You have a file system looks like this:
 
 ```
-my-project-repo/
-  package.json
-  packages/node_modules
-    package-1/
-      package.json
-    package-2/
-      package.json
+|-- my-project-repo/
+|   |-- package.json
+|   |-- packages/node_modules
+|   |   |-- package-1/
+|   |   |   |-- package.json
+|   |   |-- package-2/
+|   |   |   |-- package.json
 ```
 
 Each services/modules lives under the packages/node_modules, so that you can require common modules in a very simple way without resorting to `npm link`.
