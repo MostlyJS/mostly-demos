@@ -3,7 +3,7 @@ MostlyJS Demos
 
 [![Build Status](https://travis-ci.org/mostlyjs/mostly-demos.svg)](https://travis-ci.org/mostlyjs/mostly-demos)
 
-MostlyJS microservices examples:
+MostlyJS microservices examples in a [Alle Monorepo](https://github.com/boennemann/alle) style project.
 
 ### express-gateway
 

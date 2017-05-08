@@ -1,0 +1,23 @@
+{
+  "name": "mostly-demos",
+  "version": "1.0.0",
+  "description": "MostlyJS microservice examples",
+  "author": "Forafish",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-changed": "^3.0.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-tasks-monorepo": "^0.3.1",
+    "gulp-util": "^3.0.8",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.3.0",
+    "pm2": "^2.4.6",
+    "rimraf": "^2.6.1"
+  }
+}
