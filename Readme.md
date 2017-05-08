@@ -5,9 +5,9 @@ MostlyJS Demos
 
 ## Code structure
 
-The MostlyJS microservices demo project splits codebases into to multiple seperate independently packages in one repository using a [Monorepos](https://github.com/babel/babel/blob/master/doc/design/monorepo.md) approach.
+The MostlyJS microservices demo project splits codebases into multiple seperate independently packages in one repository using a [Monorepos](https://github.com/babel/babel/blob/master/doc/design/monorepo.md) approach.
 
-The project using a simple [Alle Monorepo](https://github.com/boennemann/alle) architecture. You have a file system looks like this:
+The project follows a simple [Alle Monorepo](https://github.com/boennemann/alle) architecture. You have a file system looks like this:
 
 ```
 |-- my-project-repo/
@@ -34,15 +34,15 @@ The project contains the following seperated packages:
 
 ### express-gateway
 
-An Express demo server serves as a RESTful gateway for calling MostlyJS microservices. Request will be mapping to corresponding microservice.
+An Express demo application serve as a RESTful gateway for calling MostlyJS microservices. Request will be mapping to corresponding microservice.
 
 ### feathers-service
 
-Sample microservice writing using Feathers.
+Sample microservice writing with Feathers.
 
 ### poplarjs-service
 
-Sample microservice writing using Poplarjs.
+Sample microservice writing with Poplarjs.
 
 ### common
 
