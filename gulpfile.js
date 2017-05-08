@@ -53,8 +53,15 @@ repo.task('server', function (pkg) {
       throw err;
     }
     var config = JSON.parse(data);
-    pm2.connect(true, function () {
-      pm2.restart(config, function () {
+    config.apps.forEach(function(app) {
+      app.script = path.join(pkg.location(), app.script);
+      app.error_file = path.join(pkg.location(), app.error_file);
+      app.out_file = path.join(pkg.location(), app.out_file);
+    });
+    pm2.connect(true, function (err) {
+      if (err) throw err;
+      pm2.restart(config, function (err, apps) {
+        if (err) throw err;
         gutil.log('Server started', pkg.name(), 'package');
         pm2.streamLogs('all', 0);
       });
