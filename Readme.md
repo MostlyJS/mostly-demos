@@ -50,6 +50,10 @@ Common modules to be used by other services, for demo only.
 
 ## Usage
 
+### Install and Run NATS Server
+
+[https://nats.io/documentation/tutorials/gnatsd-install](https://nats.io/documentation/tutorials/gnatsd-install)
+
 ### Install dependencies in each packages using [YARN](https://yarnpkg.com/)
 
 ```bash
