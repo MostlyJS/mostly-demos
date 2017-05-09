@@ -34,9 +34,7 @@ repo.task('compile', (pkg) => {
   return gulp.src(path.join(pkg.location(), 'src/**/*.js'))
     .pipe(changed('lib'))
     .pipe(sourcemaps.init())
-    .pipe(babel({
-      presets: ['env']
-    }))
+    .pipe(babel())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(path.join(pkg.location(), 'lib')));
 });
