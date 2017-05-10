@@ -66,8 +66,6 @@ $ bin/yarn_packages.sh
 $ gulp
 ```
 
-Only packages with process_development.json will be started as a server.
-
 ### Run with PM2
 
 ```bash
