@@ -7,7 +7,7 @@ MostlyJS Demos
 
 The MostlyJS microservices demo project splits codebases into multiple separate independently packages in one repository using a [Monorepos](https://github.com/babel/babel/blob/master/doc/design/monorepo.md) approach.
 
-The project follows a simple [Alle Monorepo](https://github.com/boennemann/alle) architecture. You have a file system looks like this:
+But instead of using [Lerna](https://lernajs.io/), the project follows a simple [Alle Monorepo](https://github.com/boennemann/alle) architecture. You have a file system looks like this:
 
 ```
 |-- my-project-repo/
@@ -28,7 +28,7 @@ var package1 = require('package-1');
 
 _Because require() just walks up the file tree until it finds a node_modules folder with a sub-folder that matches the package name._
 
-The project also uses gulp to build the project and PM2 for production deployment.
+The project uses gulp to build the project and PM2 for production deployment.
 
 The project contains the following seperated packages:
 
@@ -43,6 +43,10 @@ Sample microservice writing with Feathers.
 ### poplarjs-service
 
 Sample microservice writing with Poplarjs.
+
+### feathers-mongoose-services
+
+More complicated sample microservices writing with Feathers using MongoDB.
 
 ### common
 
