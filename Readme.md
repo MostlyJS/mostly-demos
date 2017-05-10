@@ -63,7 +63,6 @@ $ bin/yarn_packages.sh
 ### Run with gulp
 
 ```bash
-$ gulp compile
 $ gulp
 ```
 
