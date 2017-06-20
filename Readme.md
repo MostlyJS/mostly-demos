@@ -61,7 +61,8 @@ Common modules to be used by other services, for demo only.
 ### Install dependencies in each packages using [YARN](https://yarnpkg.com/)
 
 ```bash
-$ bin/yarn_packages.sh
+$ yarn
+$ ./bin/yarn_packages.sh
 ```
 
 ### Run with gulp
