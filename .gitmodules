@@ -1,0 +1,24 @@
+[submodule "packages/node_modules/mostly-node"]
+	path = packages/node_modules/mostly-node
+	url = git@github.com:MostlyJS/mostly-node.git
+[submodule "packages/node_modules/mostly-func"]
+	path = packages/node_modules/mostly-func
+	url = git@github.com:MostlyJS/mostly-func.git
+[submodule "packages/node_modules/mostly-poplarjs"]
+	path = packages/node_modules/mostly-poplarjs
+	url = git@github.com:MostlyJS/mostly-poplarjs.git
+[submodule "packages/node_modules/mostly-feathers-rest"]
+	path = packages/node_modules/mostly-feathers-rest
+	url = git@github.com:MostlyJS/mostly-feathers-rest.git
+[submodule "packages/node_modules/mostly-feathers-mongoose"]
+	path = packages/node_modules/mostly-feathers-mongoose
+	url = git@github.com:MostlyJS/mostly-feathers-mongoose.git
+[submodule "packages/node_modules/mostly-feathers"]
+	path = packages/node_modules/mostly-feathers
+	url = git@github.com:MostlyJS/mostly-feathers.git
+[submodule "packages/node_modules/mostly-entity"]
+	path = packages/node_modules/mostly-entity
+	url = git@github.com:MostlyJS/mostly-entity.git
+[submodule "packages/node_modules/mostly-poplarjs-rest"]
+	path = packages/node_modules/mostly-poplarjs-rest
+	url = git@github.com:MostlyJS/mostly-poplarjs-rest.git
